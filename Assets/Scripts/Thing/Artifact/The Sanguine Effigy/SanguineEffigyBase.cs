@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BloodyStatue_Base : Artifact {
+public class SanguineEffigyBase : Artifact {
 
 	// Use this for initialization
 	void Start () {
