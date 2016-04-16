@@ -7,13 +7,15 @@ public class CharMove : MonoBehaviour {
     private float moveDirection;
     private Rigidbody2D rb;
 
-    public float walkSpeed;
-    public float runSpeed;
+    private float walkSpeed;
+    private float runSpeed;
     
 
     void Start()
     {
         //moveDirection = Input.GetAxis("Horizontal");
+        walkSpeed = GetComponent<CharStats>().walkSpeed;
+        runSpeed = GetComponent<CharStats>().runSpeed;
         rb = GetComponent<Rigidbody2D>();
     }
     void Update()
