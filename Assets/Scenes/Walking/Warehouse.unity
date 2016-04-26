@@ -8,25 +8,25 @@ SceneSettings:
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
     smallestOccluder: 5
-    smallestHole: 0.25
+    smallestHole: .25
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: .00999999978
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: .211999997, g: .226999998, b: .259000003, a: 1}
+  m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
+  m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SkyboxMaterial: {fileID: 0}
-  m_HaloStrength: 0.5
+  m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -40,7 +40,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 6
+  serializedVersion: 5
   m_GIWorkflowMode: 1
   m_LightmapsMode: 1
   m_GISettings:
@@ -66,7 +66,7 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 0}
+  m_LightmapSnapshot: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -74,15 +74,15 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
-    agentRadius: 0.5
+    agentRadius: .5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: .400000006
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
     minRegionArea: 2
-    cellSize: 0.16666667
+    cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &37040319
@@ -92,13 +92,9 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11403290, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+    - target: {fileID: 11467550, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
       propertyPath: commandList.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11484514, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-      propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 456618, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
       propertyPath: m_LocalPosition.x
@@ -130,55 +126,91 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456618, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11484514, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+    - target: {fileID: 11460680, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+      propertyPath: targetObject
+      value: 
+      objectReference: {fileID: 624464013}
+    - target: {fileID: 11479456, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 378185706}
+    - target: {fileID: 11481386, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 378185706}
+    - target: {fileID: 11437086, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 378185706}
+    - target: {fileID: 11481800, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 378185706}
+    - target: {fileID: 11458532, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
       propertyPath: selectedBlock
       value: 
-      objectReference: {fileID: 1065844072}
-    - target: {fileID: 11403290, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-      propertyPath: eventHandler
-      value: 
-      objectReference: {fileID: 1065844060}
-    - target: {fileID: 11403290, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-      propertyPath: nodeRect.width
-      value: 153
       objectReference: {fileID: 0}
-    - target: {fileID: 11403290, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-      propertyPath: blockName
-      value: Frank_StatueBrief
+    - target: {fileID: 11467550, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+      propertyPath: nodeRect.x
+      value: 194
       objectReference: {fileID: 0}
-    - target: {fileID: 11403290, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+    - target: {fileID: 11467550, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+      propertyPath: nodeRect.y
+      value: 129
+      objectReference: {fileID: 0}
+    - target: {fileID: 11467550, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
       propertyPath: commandList.Array.data[0]
       value: 
-      objectReference: {fileID: 1065844061}
-    - target: {fileID: 11484514, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-      propertyPath: blockViewHeight
-      value: 245
+      objectReference: {fileID: 37040323}
+    - target: {fileID: 11474782, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+      propertyPath: selectedBlock
+      value: 
+      objectReference: {fileID: 37040320}
+    - target: {fileID: 11412442, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+      propertyPath: nodeRect.x
+      value: 130.315781
       objectReference: {fileID: 0}
-    - target: {fileID: 11403290, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-      propertyPath: commandList.Array.data[1]
-      value: 
-      objectReference: {fileID: 1065844066}
-    - target: {fileID: 11403290, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-      propertyPath: commandList.Array.data[2]
-      value: 
-      objectReference: {fileID: 1065844065}
-    - target: {fileID: 11403290, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-      propertyPath: commandList.Array.data[3]
-      value: 
-      objectReference: {fileID: 1065844064}
-    - target: {fileID: 11403290, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-      propertyPath: commandList.Array.data[4]
-      value: 
-      objectReference: {fileID: 1065844073}
-    - target: {fileID: 11484514, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-      propertyPath: selectedCommands.Array.data[0]
-      value: 
-      objectReference: {fileID: 1065844071}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11464160, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+    - {fileID: 11409572, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+    - {fileID: 11406882, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &37040320 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11452814, guid: 317e282f270516a4cb71c3fdb010b1d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 37040319}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &37040321 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11474782, guid: 317e282f270516a4cb71c3fdb010b1d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 37040319}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+--- !u!1 &37040322 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 171886, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
+  m_PrefabInternal: {fileID: 37040319}
+--- !u!114 &37040323
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 37040322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  errorMessage: 
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
+  callMode: 0
 --- !u!1 &378185704
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Frank
-  nameColor: {r: 0.50735295, g: 0.50735295, b: 0.50735295, a: 1}
+  nameColor: {r: .507352948, g: .507352948, b: .507352948, a: 1}
   soundEffect: {fileID: 0}
   profileSprite: {fileID: 0}
   portraits: []
@@ -265,7 +297,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &456642823
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,7 +344,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
+  m_RepeatDelay: .5
   m_ForceModuleActive: 0
 --- !u!114 &456642826
 MonoBehaviour:
@@ -339,7 +371,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1001 &624464012
 Prefab:
   m_ObjectHideFlags: 0
@@ -386,348 +418,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 117760, guid: 52796dcb970ec7e45bb5ee5d92b55d26, type: 2}
   m_PrefabInternal: {fileID: 624464012}
---- !u!1 &1065844058 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 127206, guid: 317e282f270516a4cb71c3fdb010b1d7, type: 2}
-  m_PrefabInternal: {fileID: 37040319}
---- !u!114 &1065844059
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 13
-  errorMessage: 
-  indentLevel: 0
-  targetObject: {fileID: 624464013}
-  targetComponentAssemblyName: LevelManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: LevelManager
-  targetMethod: LoadLevel
-  targetMethodText: 'LoadLevel (Int32): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      typeFullname: System.Int32
-      intValue: 1
-      boolValue: 0
-      floatValue: 0
-      stringValue: 
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &1065844060
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1065844062}
---- !u!114 &1065844061
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 1
-  errorMessage: 
-  indentLevel: 0
-  storyText: 'Hey kid, careful how you handle that thing. She knows how you taste
-    now and won''t let go easy. '
-  description: 
-  character: {fileID: 378185706}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1065844062 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11403290, guid: 317e282f270516a4cb71c3fdb010b1d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 37040319}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &1065844063 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11484514, guid: 317e282f270516a4cb71c3fdb010b1d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 37040319}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
---- !u!114 &1065844064
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  errorMessage: 
-  indentLevel: 0
-  storyText: Good luck, and remember to keep her moist.
-  description: 
-  character: {fileID: 378185706}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1065844065
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 3
-  errorMessage: 
-  indentLevel: 0
-  storyText: I'd say you have about three hours to make that mark.
-  description: 
-  character: {fileID: 378185706}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1065844066
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 2
-  errorMessage: 
-  indentLevel: 0
-  storyText: The boss upstairs wants her delivered to the basement of the Grove Street
-    Mall by the end of the day.
-  description: 
-  character: {fileID: 378185706}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1065844067
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 85
-    y: 214
-    width: 122
-    height: 40
-  itemId: 11
-  blockName: Statue_Start
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1065844059}
---- !u!114 &1065844068
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 10
-  errorMessage: 
-  indentLevel: 0
-  text: Drive from the warehouse
-  description: 
-  targetBlock: {fileID: 1065844067}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
---- !u!114 &1065844069
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 9
-  errorMessage: 
-  indentLevel: 0
-  storyText: Maybe some sort of fertility idol. She stares at you behind closed eyes.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1065844070
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 8
-  errorMessage: 
-  indentLevel: 0
-  storyText: Crystalline black with curious etchings in her abdomen.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1065844071
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 7
-  errorMessage: 
-  indentLevel: 0
-  storyText: She is about two feet high, heavier than she looks.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1065844072
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 83
-    y: 137
-    width: 122
-    height: 40
-  itemId: 6
-  blockName: Statue_Desc
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1065844071}
-  - {fileID: 1065844070}
-  - {fileID: 1065844069}
-  - {fileID: 1065844068}
---- !u!114 &1065844073
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1065844058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 5
-  errorMessage: 
-  indentLevel: 0
-  text: Load the statue
-  description: 
-  targetBlock: {fileID: 1065844072}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
 --- !u!1 &1254766810
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +445,7 @@ Transform:
   m_Children:
   - {fileID: 378185705}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &1434033903
 GameObject:
   m_ObjectHideFlags: 1
@@ -783,7 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1065844063}
+  selectedFlowchart: {fileID: 37040321}
 --- !u!4 &1434033905
 Transform:
   m_ObjectHideFlags: 1
@@ -795,7 +485,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &1917552772
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,14 +535,14 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0.019607844}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: .300000012
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -868,7 +558,7 @@ Camera:
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
+  m_StereoSeparation: .0219999999
   m_StereoMirrorMode: 0
 --- !u!4 &1917552777
 Transform:
